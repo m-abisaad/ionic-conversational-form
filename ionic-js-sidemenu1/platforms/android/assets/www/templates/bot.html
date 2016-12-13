@@ -1,0 +1,80 @@
+﻿<ion-view view-title="Bot">
+    <ion-content>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="form-outer" class="panel panel-default">
+                    <div class="panel-body">
+                        <form id="conversational">
+
+                            <div class="form-group">
+                                <label for="your-name">Name</label>
+                                <input cf-questions="Hi there! What's your name?" class="form-control" name="your-name" id="your-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="your-occupation">Occupation</label>
+                                <div class="radio">
+                                    <label>
+                                        <input cf-questions="Great to meet you, {previous-answer}! I'm a web form, what do you do?|Awesome, {previous-answer}! And what do you do?" name="your-occupation" id="your-occupation-1" value="developer" type="radio">
+                                        Developer
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input name="your-occupation" id="your-occupation-2" value="designer" type="radio">
+                                        Designer
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input name="your-occupation" id="your-occupation-3" value="business-analyst" type="radio">
+                                        Business Analyst
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input name="your-occupation" id="your-occupation-4" value="lost" type="radio">
+                                        Lost cause
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="your-opinion">do you think conversational interfaces be everywhere?</label>
+                                <select cf-questions="Do you think conversational forms will replace web forms in the future?" name="your-opinion" id="your-opinion" class="form-control">
+                                    <option></option>
+                                    <option>Definitely</option>
+                                    <option>Maybe</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="your-opinion">How Awesome is that? :D </label>
+                                <select cf-questions="how awesome do you think is that??" name="your-opinion" id="your-opinion" class="form-control">
+                                    <option></option>
+                                    <option>Ohh Yea!</option>
+                                    <option>A Lot</option>
+                                    <option>enno 3ade</option>
+                                    <option>Meh</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="your-age">Age</label>
+                                <input cf-questions="How old are you?" class="form-control" name="your-age" id="your-age">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="your-gemder">Gender</label>
+                                <input cf-questions="Gender" class="form-control" name="your-gender" id="your-gender">
+                            </div>
+
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    </ion-content>
+</ion-view>

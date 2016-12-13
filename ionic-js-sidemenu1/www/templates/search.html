@@ -1,0 +1,83 @@
+<ion-view view-title="Search">
+  <ion-content>
+    <h1>Search</h1>
+
+      <div class="row">
+          <div class="col-md-12">
+              <div id="form-outer" class="panel panel-default">
+                  <div class="panel-body">
+                      <form id="conversational" action="https://formspree.io/xnnawezx" method="POST">
+                          <h2>Feedback form</h2>
+
+                          <input name="_gotcha" style="display: none" type="text">
+                          <input name="_next" value="https://space10-community.github.io/conversational-form/thanks.html" type="hidden">
+                          <input name="_subject" value="Submission on ConversationalForm" type="hidden">
+
+                          <div class="form-group">
+                              <label for="your-name">Name</label>
+                              <input cf-questions="Hi there! What's your name?" class="form-control" name="your-name" id="your-name" type="name">
+                          </div>
+                          <div class="form-group">
+                              <label for="your-occupation">Occupation</label>
+                              <div class="radio">
+                                  <label>
+                                      <input cf-questions="Great to meet you, {previous-answer}! I'm a web form, what do you do?|Awesome, {previous-answer}! And what do you do?" name="your-occupation" id="your-occupation-1" value="developer" type="radio">
+                                      Developer
+                                  </label>
+                              </div>
+                              <div class="radio">
+                                  <label>
+                                      <input name="your-occupation" id="your-occupation-2" value="designer" type="radio">
+                                      Designer
+                                  </label>
+                              </div>
+                              <div class="radio">
+                                  <label>
+                                      <input name="your-occupation" id="your-occupation-3" value="curious-mind" type="radio">
+                                      Curious mind
+                                  </label>
+                              </div>
+                              <div class="radio">
+                                  <label>
+                                      <input name="your-occupation" id="your-occupation-2" value="lost" type="radio">
+                                      Lost cause
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                              <label for="your-company">Company</label>
+                              <input cf-questions="Which company are you with?" class="form-control" name="your-company" id="your-company" type="text">
+                          </div>
+
+                          <div class="form-group">
+                              <label for="your-opinion">Will conversational interfaces be everywhere?</label>
+                              <select cf-questions="Do you think conversational forms will replace web forms in the future?" name="your-opinion" id="your-opinion" class="form-control">
+                                  <option></option>
+                                  <option>Definitely</option>
+                                  <option>Maybe</option>
+                                  <option>No</option>
+                              </select>
+                          </div>
+
+                          <div class="form-group">
+                              <label for="your-email">Email</label>
+                              <input cf-questions="If you want to stay updated on conversational interfaces from SPACE10, please give me your email." class="form-control" name="your-email" id="your-email" type="email">
+                          </div>
+
+                          <div class="form-group">
+                              <label for="thats-all">Final go</label>
+                              <select cf-questions="That's it for now! Have a great day." id="thats-all" class="form-control">
+                                  <option></option>
+                                  <option>You too!</option>
+                              </select>
+                          </div>
+
+                          <button type="submit" class="btn btn-default">Submit</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </ion-content>
+</ion-view>

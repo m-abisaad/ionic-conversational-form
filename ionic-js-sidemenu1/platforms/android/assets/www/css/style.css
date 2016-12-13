@@ -1,0 +1,5 @@
+/* Empty. Add your own CSS if you like */
+
+body #conversational-form .panel.panel-default {
+    position: inherit !important;
+}
